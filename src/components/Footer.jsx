@@ -9,7 +9,7 @@ function Footer() {
             borderTop: '1px solid #eee',
             marginTop: '40px'
         }}>
-            <p>Temporary robot icon from <a href="https://www.flaticon.com/free-icons/robot" title="robot icons">Robot icons created by Freepik - Flaticon</a></p>
+            <p>Acknowledgements: This leaderboard is derived from the SWE-bench leaderboard framework, used with the explicit permission of the SWE-bench team. We thank them for their work in creating and sharing the template.</p>
             <p>This is just a protoype and the data displayed is just dummy data</p>
         </footer>
     );
