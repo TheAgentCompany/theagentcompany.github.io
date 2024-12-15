@@ -1,7 +1,116 @@
 {
     "title": "The Agent Company",
-    "subtitle": "Can Language Model based Agents solve real world tasks?",
-    "authors": ["John Doe", "Jane Doe", "Jim Beam", "John Doe", "Tony Stark","Steve Rogers","Thor","Bruce Banner","Peter Parker"],
+    "subtitle": "Benchmarking LLM Agents on Consequential Real World Tasks",
+    "authors": [
+        {
+            "name": "Frank F. Xu",
+            "affiliation": "CMU",
+            "equal_contribution": true,
+            "link": "https://frankxfz.me/"
+        },
+        {
+            "name": "Yufan Song",
+            "affiliation": "Independent",
+            "equal_contribution": true,
+            "link": "https://github.com/yufansong"
+        },
+        {
+            "name": "Boxuan Li",
+            "affiliation": "Independent",
+            "equal_contribution": true,
+            "link": "https://github.com/li-boxuan"
+        },
+        {
+            "name": "Yuxuan Tang",
+            "affiliation": "Independent",
+            "link": ""
+        },
+        {
+            "name": "Mengxue Bao",
+            "affiliation": "Independent",
+            "link": ""
+        },
+        {
+            "name": "Kritanjali Jain",
+            "affiliation": "CMU",
+            "link": ""
+        },
+        {
+            "name": "Zora Z. Wang",
+            "affiliation": "CMU",
+            "link": "https://zorazrw.github.io/"
+        },
+        {
+            "name": "Xuhui Zhou",
+            "affiliation": "CMU",
+            "link": "https://xuhuiz.com/"
+        },
+        {
+            "name": "Zhitong Guo",
+            "affiliation": "CMU",
+            "link": ""
+        },
+        {
+            "name": "Murong Cao",
+            "affiliation": "Independent",
+            "link": ""
+        },
+        {
+            "name": "Mingyang Yang",
+            "affiliation": "Independent",
+            "link": ""
+        },
+        {
+            "name": "Hao Yang Lu",
+            "affiliation": "Independent",
+            "link": ""
+        },
+        {
+            "name": "Amaad Martin",
+            "affiliation": "CMU",
+            "link": ""
+        },
+        {
+            "name": "Zhe Su",
+            "affiliation": "CMU",
+            "link": ""
+        },
+        {
+            "name": "Leander Maben",
+            "affiliation": "CMU",
+            "link": ""
+        },
+        {
+            "name": "Raj Mehta",
+            "affiliation": "CMU",
+            "link": ""
+        },
+        {
+            "name": "Wayne Chi",
+            "affiliation": "CMU",
+            "link": "https://www.waynechi.com/"
+        },
+        {
+            "name": "Lawrence Jang",
+            "affiliation": "CMU",
+            "link": ""
+        },
+        {
+            "name": "Yiqing Xie",
+            "affiliation": "CMU",
+            "link": "https://yiqingxyq.github.io/"
+        },
+        {
+            "name": "Shuyan Zhou",
+            "affiliation": "Duke",
+            "link": "https://shuyanzhou.github.io/"
+        },
+        {
+            "name": "Graham Neubig",
+            "affiliation": "CMU",
+            "link": "https://phontron.com/"
+        }
+    ],
     "paper_link": "https://arxiv.org/abs/2310.06770",
     "github_link": "https://github.com/princeton-nlp/SWE-bench"
 }

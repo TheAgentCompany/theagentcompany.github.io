@@ -17,11 +17,55 @@ function Header() {
         <h3>{headerDetails.subtitle}</h3>
         {/* <h3 style={{ fontSize: '20px', paddingTop: '1.2em' }}>ICLR 2024</h3> */}
         <p style={{ textAlign: 'center', marginTop: '1em' }}>
-          {headerDetails.authors.map((author, index) => (
+          {/* First three authors */}
+          {headerDetails.authors.slice(0, 3).map((author, index) => (
             <React.Fragment key={index}>
-              {index % 5 === 0 && index !== 0 && <br />}
-              <span>{author}</span>
-              {index !=  headerDetails.authors.length-1 && ', '}
+              <span>
+                {author.link ? (
+                  <a href={author.link} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    {author.name}
+                  </a>
+                ) : (
+                  author.name
+                )}
+                {author.equal_contribution && <sup>*</sup>}
+              </span>
+              {index !== 2 && ', '}
+            </React.Fragment>
+          ))}
+          <br />
+          {/* Middle authors */}
+          {headerDetails.authors.slice(3, -2).map((author, index) => (
+            <React.Fragment key={index}>
+              {index % 4 === 0 && index !== 0 && <br />}
+              <span>
+                {author.link ? (
+                  <a href={author.link} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    {author.name}
+                  </a>
+                ) : (
+                  author.name
+                )}
+                {author.equal_contribution && <sup>*</sup>}
+              </span>
+              {index !== headerDetails.authors.slice(3, -2).length - 1 && ', '}
+            </React.Fragment>
+          ))}
+          <br />
+          {/* Last two authors */}
+          {headerDetails.authors.slice(-2).map((author, index) => (
+            <React.Fragment key={index}>
+              <span>
+                {author.link ? (
+                  <a href={author.link} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    {author.name}
+                  </a>
+                ) : (
+                  author.name
+                )}
+                {author.equal_contribution && <sup>*</sup>}
+              </span>
+              {index === 0 && ', '}
             </React.Fragment>
           ))}
         </p>
