@@ -105,36 +105,6 @@
             "site": "https://docs.all-hands.dev/",
             "open_source": true,
             "checked": true
-        },
-        {
-            "model": "OpenHands + Gemini 2.0",
-            "resolved": 0,
-            "score": 0,
-            "steps": 0,
-            "costs": 0,
-            "org": "https://github.com/user-attachments/assets/18b091c6-700d-4a56-a95d-09249af2182f",
-            "date": "2024-12-15",
-            "logs": "✓",
-            "trajs": "✓",
-            "screenshot": "✓",
-            "site": "https://docs.all-hands.dev/",
-            "open_source": true,
-            "checked": true
-        },
-        {
-            "model": "OpenHands + qwen-2.5",
-            "resolved": 0,
-            "score": 0,
-            "steps": 0,
-            "costs": 0,
-            "org": "https://github.com/user-attachments/assets/18b091c6-700d-4a56-a95d-09249af2182f",
-            "date": "2024-12-15",
-            "logs": "✓",
-            "trajs": "✓",
-            "screenshot": "✓",
-            "site": "https://docs.all-hands.dev/",
-            "open_source": true,
-            "checked": true
         }
     ]
 }
