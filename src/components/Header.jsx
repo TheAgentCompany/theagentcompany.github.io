@@ -90,13 +90,11 @@ function Header() {
               <i className="fa fa-upload"></i> Submit&nbsp;
             </button>
           </Link>
-            
-
-          {/* <a href="viewer.html">
-            <button className="outline">
-              <i className="fa fa-chart-simple"></i> Analysis&nbsp;
+          <Link to="/leaderboard">
+            <button className="outline" style={{ width: '200px' }}>
+              <i className="fa fa-trophy"></i> Leaderboard&nbsp;
             </button>
-          </a> */}
+          </Link>
         </div>
       </div>
     </section>

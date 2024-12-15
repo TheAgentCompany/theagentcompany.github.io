@@ -9,9 +9,7 @@ function Footer() {
             borderTop: '1px solid #eee',
             marginTop: '40px'
         }}>
-            <p>Acknowledgements: This leaderboard is derived from the SWE-bench leaderboard framework, used with the explicit permission of the SWE-bench team. We thank them for their work in creating and sharing the template.</p>
-            <p>This is just a protoype and the data displayed is just dummy data</p>
-        </footer>
+            <p>Acknowledgements: This leaderboard is derived from the SWE-bench leaderboard framework, used with the explicit permission of the SWE-bench team. We thank them for their work in creating and sharing the template.</p>        </footer>
     );
 }
 
