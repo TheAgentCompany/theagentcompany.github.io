@@ -8,6 +8,14 @@ export default function Leaderboard_Details() {
               (<b>Total of {leaderboard.number_of_tasks}</b>)
               that were <i>resolved</i> by the model.
               <br />
+              - The <span style={{color: '#0ea7ff'}}><b>% Score</b></span> is a weighted metric combining the sub checkpoint resolution rate 
+              and resolution rate (50% each). It's calculated as: (sub checkpoints resolved / total sub checkpoints × 0.5) + 
+              (resolution status × 0.5), where resolution status is 1 if resolved, 0 if not.
+              <br />
+              - The <span style={{color: '#0ea7ff'}}><b>Avg Steps</b></span> refers to the average number of steps taken by the model to execute the task.
+              <br />
+              - The <span style={{color: '#0ea7ff'}}><b>Avg Costs</b></span> refers to the average costs of the model to execute the task.
+              <br />
               - <span style={{color: '#0ea7ff'}}><b>✅ Checked</b></span> indicates that we, the Agent Company team, received access to the system and
               were able to reproduce the patch generations.
               <br />

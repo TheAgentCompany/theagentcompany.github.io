@@ -18,10 +18,14 @@ function Leaderboard() {
                   <tr>
                     <th><div class="sticky-header-content">Model</div></th>
                     <th><div class="sticky-header-content">% Resolved</div></th>
+                    <th><div class="sticky-header-content">% Score</div></th>
+                    <th><div class="sticky-header-content">Avg Steps</div></th>
+                    <th><div class="sticky-header-content">Avg Costs ($)</div></th>
                     <th><div class="sticky-header-content">Org</div></th>
                     <th><div class="sticky-header-content">Date</div></th>
                     <th><div class="sticky-header-content">Logs</div></th>
                     <th><div class="sticky-header-content">Trajs</div></th>
+                    <th><div class="sticky-header-content">Screenshot</div></th>
                     <th><div class="sticky-header-content">Site</div></th>
                   </tr>
                 </thead>
@@ -40,6 +44,15 @@ function Leaderboard() {
                             </td>
                             <td>
                                 <p className='number'>{row.resolved}%</p>
+                            </td>
+                            <td>
+                                <p className='number'>{row.score}%</p>
+                            </td>
+                            <td>
+                                <p className='number'>{row.steps}</p>
+                            </td>
+                            <td>
+                                <p className='number'>{row.costs}</p>
                             </td>
                             <td>
                                 {row.org && 
@@ -62,6 +75,11 @@ function Leaderboard() {
                             <td>
                                 <p style={{textAlign: 'center'}}>
                                     {row.trajs}
+                                </p>
+                            </td>
+                            <td>
+                                <p style={{textAlign: 'center'}}>
+                                    {row.screenshot || '-'}
                                 </p>
                             </td>
                             <td>
