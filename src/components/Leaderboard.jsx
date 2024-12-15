@@ -34,25 +34,25 @@ function Leaderboard() {
                         <tr key={index}>
                             <td>
                                 <p className="model-type">
-                                    {index==0 && "🥇 "}
-                                    {index==1 && "🥈 "}
-                                    {index==2 && "🥉 "}
+                                    {index===0 && "🥇 "}
+                                    {index===1 && "🥈 "}
+                                    {index===2 && "🥉 "}
                                     {row.open_source && "🤠 "}
                                     {row.checked && "✅ "}
                                     {row.model}
                                 </p>
                             </td>
                             <td>
-                                <p className='number'>{row.resolved}%</p>
+                                <p className='number'>{row.resolved.toFixed(1)}%</p>
                             </td>
                             <td>
-                                <p className='number'>{row.score}%</p>
+                                <p className='number'>{row.score.toFixed(1)}%</p>
                             </td>
                             <td>
-                                <p className='number'>{row.steps}</p>
+                                <p className='number'>{row.steps.toFixed(2)}</p>
                             </td>
                             <td>
-                                <p className='number'>{row.costs}</p>
+                                <p className='number'>{row.costs.toFixed(2)}</p>
                             </td>
                             <td>
                                 {row.org && 
