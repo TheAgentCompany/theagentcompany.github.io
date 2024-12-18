@@ -15,7 +15,7 @@ function About() {
             by providing an extensible benchmark for evaluating AI agents that interact with the world in similar ways to those of a digital worker: by browsing the Web, writing code, running programs, and communicating with other coworkers.
             </p>
             <img src="TAC_architecture.png" style={{width: '80%', margin: 'auto', display: 'block'}}/>
-            <h3 className="text-title" style={{marginBottom: '0.5em'}}>Citation</h3>
+            {/* <h3 className="text-title" style={{marginBottom: '0.5em'}}>Citation</h3> */}
             {/* <pre id="citation"><code>{`@inproceedings{
                 jimenez2024swebench,
                 title={{SWE}-bench: Can Language Models Resolve Real-world Github Issues?},
@@ -24,6 +24,10 @@ function About() {
                 year={2024},
                 url={https://openreview.net/forum?id=VTF8yNQM66}
             }`}</code></pre> */}
+            <h3 className="text-title" style={{marginBottom: '0.5em'}}>Contact</h3>
+            <p className="text-content">
+            Questions? Please create an issue in our github repository <a href="https://github.com/TheAgentCompany/TheAgentCompany/issues/new" target="_blank" rel="noopener noreferrer">here</a>. Otherwise, you can also contact <a href="https://frankxfz.me/" target="_blank" rel="noopener noreferrer">Frank F. Xu</a>, <a href="https://github.com/yufansong" target="_blank" rel="noopener noreferrer">Yufan Song</a>, <a href="https://github.com/li-boxuan" target="_blank" rel="noopener noreferrer">Boxuan Li</a>, (Email: fangzhex@cs.cmu.edu, yufans@alumni.cmu.edu, boxuanli@alumni.cmu.edu)
+            </p>
           </div>
         </div>
     );
