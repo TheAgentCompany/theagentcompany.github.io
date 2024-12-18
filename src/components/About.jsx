@@ -5,11 +5,17 @@ function About() {
         <div className="content-wrapper">
           <div className="content-box">
             <h2 className="text-title">About</h2>
-            <img src="teaser.png" style={{width: '80%', margin: 'auto', display: 'block'}}/>
+          <img src="TAC_architecture.png" style={{width: '80%', margin: 'auto', display: 'block'}}/>
             <p className="text-content">
-              Agent company is a dataset that tests an agents ability to complete daily tasks. The dataset collects 2,294 Issue-Pull Request
-              pairs from 12 popular Python repositories. Evaluation is performed by unit test verification using post-PR behavior as the reference solution.
-              Read more about SWE-bench in our <a href="https://arxiv.org/abs/2310.06770" target="_blank">paper</a>!
+            Today we interact with computers on an everyday basis, be it life or work.
+            Today, many aspects of professional work can be done entirely with access to a computer and the Internet.
+            At the same time, thanks to improvements in large language models (LLMs), there has also been a rapid development in AI agents that interact with and affect change in their surrounding environments.
+            But how performant are AI agents
+            To measure the progress of these LLM agents' performance on performing real-world professional tasks,
+            in this paper, we introduce tac, an extensible benchmark for evaluating AI agents that interact with the world in similar ways to those of a digital worker: by browsing the Web, writing code, running programs, and communicating with other coworkers.
+            We build a self-contained environment with internal web sites and data that mimics a small software company environment, and create a variety of tasks that may be performed by workers in such a company.
+            We test baseline agents powered by both closed API-based and open-weights language models (LMs), and find that with the most competitive agent, 24% of the tasks can be completed autonomously.
+            This paints a nuanced picture on task automation with LM agents -- in a realistic setting simulating a real workplace, a good portion of simpler tasks could be solved autonomously, but more difficult long-horizon tasks are still beyond the reach of current systems.
             </p>
             <h3 className="text-title" style={{marginBottom: '0.5em'}}>Citation</h3>
             <pre id="citation"><code>{`@inproceedings{
