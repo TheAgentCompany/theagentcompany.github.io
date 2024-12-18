@@ -6,7 +6,13 @@ function Leaderboard() {
   const [activeTab, setActiveTab] = useState('Verified');
 
   // Sort rows by resolved count in descending order
-  const sortedRows = [...leaderboardData.rows].sort((a, b) => b.resolved - a.resolved);
+  // If same resolved count, sort by score in descending order
+  const sortedRows = [...leaderboardData.rows].sort((a, b) => {
+    if (b.resolved !== a.resolved) {
+      return b.resolved - a.resolved;
+    }
+    return b.score - a.score;
+  });
 
   return (
     <div className="content-wrapper">
