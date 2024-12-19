@@ -126,7 +126,7 @@ function Header() {
           marginTop: '0.5em',
           fontSize: 'clamp(14px, 2vw, 16px)',
         }}>
-          <sup>*</sup>Lead contributors. <sup>+</sup>Equal contribution.
+          (* Equal contribution)
         </p>
         
         <div className="content-wrapper" style={{ marginTop: '2em' }}>
