@@ -1,12 +1,14 @@
 import React from 'react';
 
 function Citation() {
-    const citationText = `@inproceedings{jimenez2024swebench,
-    title     = {{SWE}-bench: Can Language Models Resolve Real-world Github Issues?},
-    author    = {Carlos E Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik R Narasimhan},
-    booktitle = {The Twelfth International Conference on Learning Representations},
-    year      = {2024},
-    url       = {https://openreview.net/forum?id=VTF8yNQM66}
+    const citationText = `@misc{xu2024theagentcompanybenchmarkingllmagents,
+      title={TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks}, 
+      author={Frank F. Xu and Yufan Song and Boxuan Li and Yuxuan Tang and Kritanjali Jain and Mengxue Bao and Zora Z. Wang and Xuhui Zhou and Zhitong Guo and Murong Cao and Mingyang Yang and Hao Yang Lu and Amaad Martin and Zhe Su and Leander Maben and Raj Mehta and Wayne Chi and Lawrence Jang and Yiqing Xie and Shuyan Zhou and Graham Neubig},
+      year={2024},
+      eprint={2412.14161},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2412.14161}, 
 }`;
 
     return (

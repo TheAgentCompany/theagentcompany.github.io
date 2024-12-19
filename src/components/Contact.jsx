@@ -27,7 +27,7 @@ function Contact() {
                         href="https://github.com/TheAgentCompany/TheAgentCompany/issues/new" 
                         style={{ color: '#0066B3', textDecoration: 'underline' }}
                     >
-                        github repository here
+                        github repository
                     </a>
                     .
                 </div>
