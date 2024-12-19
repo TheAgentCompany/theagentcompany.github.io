@@ -6,21 +6,35 @@ function Header() {
   return (
     <section style={{ backgroundColor: 'transparent' }}>
       <div className="content-wrapper title-wrapper" style={{ flexDirection: 'column' }}>
-        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', paddingBottom: '15px' }}>
-          <h1 style={{ fontSize: '60px', paddingTop: '0.4em' }}>{headerDetails.title}</h1>
+        <div style={{ 
+          display: 'flex', 
+          flexDirection: 'row', 
+          alignItems: 'center', 
+          paddingBottom: '15px',
+          flexWrap: 'wrap',
+          justifyContent: 'center'
+        }}>
+          <h1 style={{ 
+            fontSize: 'clamp(30px, 5vw, 60px)', 
+            paddingTop: '0.4em' 
+          }}>{headerDetails.title}</h1>
           <img 
-            src={process.env.PUBLIC_URL + '/TAC_logo.png'} 
-            style={{ height: '100px', paddingTop: '0em', paddingLeft: '0.5em' }} 
-            alt="TheAgentCompanyLogo" 
+            src={process.env.PUBLIC_URL + '/TAC_logo.png'}
+            style={{ 
+              height: 'clamp(50px, 10vw, 100px)', 
+              paddingTop: '0em', 
+              paddingLeft: '0.5em' 
+            }}
+            alt="TheAgentCompanyLogo"
           />
         </div>
-        <h3>{headerDetails.subtitle}</h3>
+        <h3 style={{ fontSize: 'clamp(16px, 3vw, 24px)' }}>{headerDetails.subtitle}</h3>
         {/* <h3 style={{ fontSize: '20px', paddingTop: '1.2em' }}>ICLR 2024</h3> */}
         <p style={{ textAlign: 'center', marginTop: '1em' }}>
           {/* First three authors */}
           {headerDetails.authors.slice(0, 3).map((author, index) => (
             <React.Fragment key={index}>
-              <span>
+              <span style={{ fontWeight: 'bold' }}> 
                 {author.link ? (
                   <a href={author.link} style={{ color: 'inherit', textDecoration: 'none' }}>
                     {author.name}

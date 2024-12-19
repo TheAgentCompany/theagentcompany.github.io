@@ -1,26 +1,26 @@
 import React from 'react';
 
 function About() {
-    return (
-        <div style={{ maxWidth: '1000px', margin: '2em auto', padding: '0.5em' }}>
-            <h2 className="section-title" style={{ 
-                fontSize: '2.5rem', 
-                fontWeight: 'bold',
-                color: '#0066B3',
-                textAlign: 'center',
-                marginBottom: '1em'
-            }}>
-                About
-            </h2>
-            <div style={{
-                background: '#f8f9fa',
-                border: '1px solid #e9ecef',
-                borderRadius: '8px',
-                padding: '2em',
-                fontSize: '1.1rem',
-                lineHeight: '1.8',
-                boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
-            }}>
+  return (
+      <div style={{ maxWidth: '1000px', margin: '2em auto', padding: '0.5em' }}>
+          <h2 className="section-title" style={{ 
+              fontSize: 'clamp(24px, 4vw, 2.5rem)', 
+              fontWeight: 'bold',
+              color: '#0066B3',
+              textAlign: 'center',
+              marginBottom: '1em'
+          }}>
+              About
+          </h2>
+          <div style={{
+              background: '#f8f9fa',
+              border: '1px solid #e9ecef',
+              borderRadius: '8px',
+              padding: 'clamp(1em, 3vw, 2em)', 
+              fontSize: 'clamp(1rem, 2vw, 1.1rem)', 
+              lineHeight: '1.8',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
+          }}>
                 <p style={{ marginBottom: '2.5em' }}>
                     We interact with computers on an everyday basis, be it in everyday life or work, and many aspects of work can be done entirely with access to a computer and the Internet.
                     At the same time, thanks to improvements in large language models (LLMs), there has also been a rapid development in AI agents that interact with and affect change in their surrounding environments.

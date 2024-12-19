@@ -35,9 +35,16 @@ function Contact() {
                     Otherwise, you can also contact:
                 </div>
                 <div style={{ marginBottom: '0.5em', fontWeight: '500' }}>
-                    Frank F. Xu, Yufan Song, Boxuan Li (fangzhex@cs.cmu.edu, yufans@alumni.cmu.edu, boxuanli@alumni.cmu.edu)
+                    <a href="https://frankxfz.me/" style={{ color: '#0066B3' }}>Frank F. Xu</a>,{' '}
+                    <a href="https://github.com/yufansong" style={{ color: '#0066B3' }}>Yufan Song</a>,{' '}
+                    <a href="https://github.com/li-boxuan" style={{ color: '#0066B3' }}>Boxuan Li</a>
                 </div>
-        
+                <div>
+                    Email:{' '}
+                    <a href="mailto:fangzhex@cs.cmu.edu" style={{ color: '#0066B3' }}>fangzhex@cs.cmu.edu</a>,{' '}
+                    <a href="mailto:yufans@alumni.cmu.edu" style={{ color: '#0066B3' }}>yufans@alumni.cmu.edu</a>,{' '}
+                    <a href="mailto:boxuanli@alumni.cmu.edu" style={{ color: '#0066B3' }}>boxuanli@alumni.cmu.edu</a>
+                </div>
             </div>
         </div>
     );
