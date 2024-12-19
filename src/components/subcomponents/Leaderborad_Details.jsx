@@ -19,7 +19,7 @@ export default function Leaderboard_Details() {
               - <span style={{color: '#0ea7ff'}}><b>✅ Checked</b></span> indicates that we, the Agent Company team, received access to the system and
               were able to reproduce the patch generations.
               <br />
-              - <span style={{color: '#0ea7ff'}}><b>🤠 Open</b></span> refers to submissions that have open-source code. This does <i>not</i>
+              - <span style={{color: '#0ea7ff'}}><b>🤠 Open</b></span> refers to submissions that have open-source code. This does not
               necessarily mean the underlying model is open-source.
               <br />
               - The leaderboard is updated once a week on <b>Monday</b>.

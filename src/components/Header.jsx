@@ -120,6 +120,14 @@ function Header() {
           <sup>2</sup>Independent{' '}
           <sup>3</sup>Duke University
         </p>
+
+        <p style={{ 
+          textAlign: 'center', 
+          marginTop: '0.5em',
+          fontSize: 'clamp(14px, 2vw, 16px)',
+        }}>
+          <sup>*</sup>Lead contributors. <sup>+</sup>Equal contribution.
+        </p>
         
         <div className="content-wrapper" style={{ marginTop: '2em' }}>
           <Link to="/">

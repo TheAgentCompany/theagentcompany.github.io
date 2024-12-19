@@ -4,6 +4,7 @@ import Citation from './Citation';
 import ServiceDemo from './ServiceDemo';
 import AgentDemo from './AgentDemo';
 import Contact from './Contact';
+import QuickStart from './QuickStart';
 
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
             <ServiceDemo />
             <AgentDemo />
             <Citation />
+            <QuickStart />
             <Contact />
         </>
         

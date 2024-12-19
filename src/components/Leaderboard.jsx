@@ -29,6 +29,7 @@ function Leaderboard() {
                     <th><div class="sticky-header-content">Avg Costs ($)</div></th>
                     <th><div class="sticky-header-content">Org</div></th>
                     <th><div class="sticky-header-content">Date</div></th>
+                    <th><div class="sticky-header-content">Environment Model</div></th>
                     <th><div class="sticky-header-content">Logs</div></th>
                     <th><div class="sticky-header-content">Trajs</div></th>
                     <th><div class="sticky-header-content">Screenshot</div></th>
@@ -63,7 +64,7 @@ function Leaderboard() {
                             <td>
                                 {row.org && 
                                     <p style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                                        <img src={row.org} style={{height: '1.25em'}} alt="org" />
+                                        <img src={row.org} style={{height: '2em'}} alt="org" />
                                     </p>
                                 }
                                 {!row.org && <span>-</span>}
@@ -71,6 +72,11 @@ function Leaderboard() {
                             <td>
                                 <p>
                                     <span className="label-date">{row.date}</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p style={{textAlign: 'center'}}>
+                                {row.enviroment_model || '-'}
                                 </p>
                             </td>
                             <td>
