@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <section style={{ backgroundColor: 'var(--dark_accent_color)' }}>
+    <section style={{ backgroundColor: 'transparent' }}>
       <div className="content-wrapper title-wrapper" style={{ flexDirection: 'column' }}>
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', paddingBottom: '15px' }}>
           <h1 style={{ fontSize: '60px', paddingTop: '0.4em' }}>{headerDetails.title}</h1>
