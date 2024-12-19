@@ -12,7 +12,6 @@ function Home() {
             <About />
             <ServiceDemo />
             <AgentDemo />
-            <Citation/>
             <Contact />
         </>
         
