@@ -3,6 +3,28 @@ import headerDetails from '../data/header_details.json';
 import { Link } from 'react-router-dom';
 
 function Header() {
+  // Helper function to get the correct superscript
+  const getSuperscript = (author) => {
+    let sup = '';
+    switch(author.affiliation) {
+      case 'CMU':
+        sup = '1';
+        break;
+      case 'Independent':
+        sup = '2';
+        break;
+      case 'Duke':
+        sup = '3';
+        break;
+      default:
+        sup = '1';
+    }
+    if (author.equal_contribution) {
+      sup += '*';
+    }
+    return sup;
+  };
+
   return (
     <section style={{ backgroundColor: 'transparent' }}>
       <div className="content-wrapper title-wrapper" style={{ flexDirection: 'column' }}>
@@ -29,12 +51,16 @@ function Header() {
           />
         </div>
         <h3 style={{ fontSize: 'clamp(16px, 3vw, 24px)' }}>{headerDetails.subtitle}</h3>
-        {/* <h3 style={{ fontSize: '20px', paddingTop: '1.2em' }}>ICLR 2024</h3> */}
-        <p style={{ textAlign: 'center', marginTop: '1em' }}>
+        <p style={{ 
+          textAlign: 'center', 
+          marginTop: '1em',
+          fontSize: 'clamp(14px, 2vw, 16px)',
+          lineHeight: '1.8'
+        }}>
           {/* First three authors */}
           {headerDetails.authors.slice(0, 3).map((author, index) => (
             <React.Fragment key={index}>
-              <span style={{ fontWeight: 'bold' }}> 
+              <span>
                 {author.link ? (
                   <a href={author.link} style={{ color: 'inherit', textDecoration: 'none' }}>
                     {author.name}
@@ -42,13 +68,13 @@ function Header() {
                 ) : (
                   author.name
                 )}
-                {author.equal_contribution && <sup>*</sup>}
+                <sup>{getSuperscript(author)}</sup>
               </span>
               {index !== 2 && ', '}
             </React.Fragment>
           ))}
           <br />
-          {/* Middle authors */}
+          {/* Middle authors - display 4 per line */}
           {headerDetails.authors.slice(3, -2).map((author, index) => (
             <React.Fragment key={index}>
               {index % 4 === 0 && index !== 0 && <br />}
@@ -60,9 +86,9 @@ function Header() {
                 ) : (
                   author.name
                 )}
-                {author.equal_contribution && <sup>*</sup>}
+                <sup>{getSuperscript(author)}</sup>
+                {index !== headerDetails.authors.slice(3, -2).length - 1 && ', '}
               </span>
-              {index !== headerDetails.authors.slice(3, -2).length - 1 && ', '}
             </React.Fragment>
           ))}
           <br />
@@ -77,12 +103,24 @@ function Header() {
                 ) : (
                   author.name
                 )}
-                {author.equal_contribution && <sup>*</sup>}
+                <sup>{getSuperscript(author)}</sup>
+                {index === 0 && ', '}
               </span>
-              {index === 0 && ', '}
             </React.Fragment>
           ))}
         </p>
+        
+        {/* Affiliations */}
+        <p style={{ 
+          textAlign: 'center', 
+          marginTop: '0.5em',
+          fontSize: 'clamp(14px, 2vw, 16px)'
+        }}>
+          <sup>1</sup>Carnegie Mellon University{' '}
+          <sup>2</sup>Independent{' '}
+          <sup>3</sup>Duke University
+        </p>
+        
         <div className="content-wrapper" style={{ marginTop: '2em' }}>
           <Link to="/">
             <button className="outline">
@@ -99,11 +137,6 @@ function Header() {
               <i className="fab fa-github"></i> Code&nbsp;
             </button>
           </a>
-          {/* <Link to="/submit">
-            <button className="outline">
-              <i className="fa fa-upload"></i> Submit&nbsp;
-            </button>
-          </Link> */}
           <Link to="/leaderboard">
             <button className="outline" style={{ width: '200px' }}>
               <i className="fa fa-trophy"></i> Leaderboard&nbsp;
@@ -115,4 +148,4 @@ function Header() {
   );
 }
 
-export default Header; 
+export default Header;

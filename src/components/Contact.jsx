@@ -24,7 +24,7 @@ function Contact() {
                 <div style={{ marginBottom: '1em' }}>
                     Questions? Please create an issue in our{' '}
                     <a 
-                        href="https://github.com/your-repository" 
+                        href="https://github.com/TheAgentCompany/TheAgentCompany/issues/new" 
                         style={{ color: '#0066B3', textDecoration: 'underline' }}
                     >
                         github repository here
