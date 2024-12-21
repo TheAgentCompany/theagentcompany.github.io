@@ -24,7 +24,7 @@ export default function Leaderboard_Details() {
               <br />
               - The leaderboard is updated once a week on <b>Monday</b>.
               <br />
-              {/* - If you would like to submit your model to the leaderboard, please check the <Link to="/submit">submission</Link> page. */}
+              - If you would like to submit your model to the leaderboard, please check the <Link to="/submit">submission</Link> page.
         </p>
     );
 }

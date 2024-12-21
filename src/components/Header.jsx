@@ -145,6 +145,11 @@ function Header() {
               <i className="fab fa-github"></i> Code&nbsp;
             </button>
           </a>
+          <Link to="/submit">
+            <button className="outline">
+              <i className="fa fa-upload"></i> Submit&nbsp;
+            </button>
+          </Link>
           <Link to="/leaderboard">
             <button className="outline" style={{ width: '200px' }}>
               <i className="fa fa-trophy"></i> Leaderboard&nbsp;
