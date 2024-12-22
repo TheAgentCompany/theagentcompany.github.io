@@ -30,7 +30,6 @@ function Leaderboard() {
                     <th><div class="sticky-header-content">Org</div></th>
                     <th><div class="sticky-header-content">Date</div></th>
                     <th><div class="sticky-header-content">Environment Model</div></th>
-                    <th><div class="sticky-header-content">Logs</div></th>
                     <th><div class="sticky-header-content">Trajs</div></th>
                     <th><div class="sticky-header-content">Screenshot</div></th>
                     <th><div class="sticky-header-content">Site</div></th>
@@ -77,11 +76,6 @@ function Leaderboard() {
                             <td>
                                 <p style={{textAlign: 'center'}}>
                                 {row.enviroment_model || '-'}
-                                </p>
-                            </td>
-                            <td>
-                                <p style={{textAlign: 'center'}}>
-                                    {row.logs}
                                 </p>
                             </td>
                             <td>
