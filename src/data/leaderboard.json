@@ -17,7 +17,7 @@
             "checked": true
         },
         {
-            "model": "OpenHands + sonnet-20250219",
+            "model": "OpenHands + Claude 3.7 Sonnet",
             "resolved": 26.29,
             "score": 36.41,
             "steps": 27.78,
