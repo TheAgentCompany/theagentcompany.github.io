@@ -51,7 +51,7 @@
             "resolved": 11.4,
             "score": 19.0,
             "steps": 39.85,
-            "costs": 0.79,
+            "costs": 0.58,
             "org": "https://github.com/user-attachments/assets/18b091c6-700d-4a56-a95d-09249af2182f",
             "date": "2024-12-17",
             "enviroment_model": "Claude 3.5 Sonnet",
