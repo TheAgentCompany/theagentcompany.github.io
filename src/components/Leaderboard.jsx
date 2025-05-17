@@ -55,10 +55,10 @@ function Leaderboard() {
                                 <p className='number'>{row.score.toFixed(1)}%</p>
                             </td>
                             <td>
-                                <p className='number'>{row.steps.toFixed(2)}</p>
+                                <p className='number'>{row.steps ? row.steps.toFixed(2) : 'N/A'}</p>
                             </td>
                             <td>
-                                <p className='number'>{row.costs.toFixed(2)}</p>
+                                <p className='number'>{row.costs ? row.costs.toFixed(2) : 'N/A'}</p>
                             </td>
                             <td>
                                 {row.org && 

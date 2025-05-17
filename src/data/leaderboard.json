@@ -77,6 +77,19 @@
             "checked": true
         },
         {
+            "model": "OWL RolePlay + GPT 4o/o3-mini",
+            "resolved": 4.0,
+            "score": 11.3,
+            "org": "https://github.com/user-attachments/assets/18b091c6-700d-4a56-a95d-09249af2182f",
+            "date": "2025-05-10",
+            "enviroment_model": "Claude 3.5 Sonnet",
+            "trajs": "✓",
+            "screenshot": "✓",
+            "site": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20250510_OWL-RolePlay-gpt-4o-o3-mini",
+            "open_source": true,
+            "checked": true
+        },        
+        {
             "model": "OpenHands + Gemini 1.5 Pro",
             "resolved": 3.4,
             "score": 8.0,
