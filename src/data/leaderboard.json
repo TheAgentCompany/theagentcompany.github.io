@@ -2,6 +2,36 @@
     "number_of_tasks": 175,
     "rows": [
         {
+            "model": "OpenHands-Versa + Claude Sonnet 4",
+            "resolved": 33.14,
+            "score": 43.19,
+            "steps": 46.45,
+            "costs": 1.63,
+            "org": "https://github.com/user-attachments/assets/18b091c6-700d-4a56-a95d-09249af2182f",
+            "date": "2025-06-14",
+            "enviroment_model": "Claude Sonnet 4",
+            "trajs": "✓",
+            "screenshot": "✓",
+            "site": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20250614_OpenHands-Versa-claude-sonnet-4",
+            "open_source": true,
+            "checked": true
+        },
+        {
+            "model": "OpenHands-Versa + Claude 3.7 Sonnet",
+            "resolved": 30.86,
+            "score": 40.18,
+            "steps": 52.73,
+            "costs": 3.70,
+            "org": "https://github.com/user-attachments/assets/18b091c6-700d-4a56-a95d-09249af2182f",
+            "date": "2025-06-14",
+            "enviroment_model": "Claude 3.7 Sonnet",
+            "trajs": "✓",
+            "screenshot": "✓",
+            "site": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20250614_OpenHands-Versa-claude-3.7-sonnet",
+            "open_source": true,
+            "checked": true
+        },
+        {
             "model": "OpenHands + Gemini 2.5 Pro",
             "resolved": 30.29,
             "score": 39.28,
