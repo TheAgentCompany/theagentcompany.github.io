@@ -2,6 +2,19 @@
     "number_of_tasks": 175,
     "rows": [
         {
+            "model": "MUSE + Gemini 2.5 Flash",
+            "resolved": 41.14,
+            "score": 51.78,
+            "org": "https://github.com/user-attachments/assets/a30502d6-ea2c-49b3-9130-6ed101e61198",
+            "date": "2025-10-13",
+            "enviroment_model": "GPT 4o",
+            "trajs": "✓",
+            "screenshot": "✗",
+            "site": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20251013_MUSE-gemini-2.5-flash",
+            "open_source": true,
+            "checked": true
+        },
+        {
             "model": "OpenHands-Versa + Claude Sonnet 4",
             "resolved": 33.14,
             "score": 43.19,
