@@ -5,6 +5,8 @@
             "model": "TTE-MatrixAgent + Deepseek-V3.2",
             "resolved": 42.86,
             "score": 52.40,
+            "steps": 29.91,
+            "costs": 0.40,
             "org": "https://github.com/user-attachments/assets/83067591-80de-4266-9a67-1d53e5e41589",
             "date": "2025-11-10",
             "enviroment_model": "Qwen_Plus",
