@@ -2,6 +2,19 @@
     "number_of_tasks": 175,
     "rows": [
         {
+            "model": "TTE-MatrixAgent + Deepseek-V3.2",
+            "resolved": 42.86,
+            "score": 52.40,
+            "org": "https://github.com/user-attachments/assets/83067591-80de-4266-9a67-1d53e5e41589",
+            "date": "2025-11-10",
+            "enviroment_model": "Qwen_Plus",
+            "trajs": "✓",
+            "screenshot": "✓",
+            "site": "https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20251110_TTE-MatrixAgent-Deepseek-V3.2",
+            "open_source": false,
+            "checked": true
+        },
+        {
             "model": "MUSE + Gemini 2.5 Flash",
             "resolved": 41.14,
             "score": 51.78,
