@@ -5,8 +5,6 @@
             "model": "IRIS-Agent + GPT-5.4",
             "resolved": 46.29,
             "score": 58.12,
-            "steps": "N/A",
-            "costs": "N/A",
             "org": "https://github.com/user-attachments/assets/6a48b1d6-a73c-4520-8a84-91a0750bffc3",
             "date": "2026-06-25",
             "enviroment_model": "GPT-5.4",
